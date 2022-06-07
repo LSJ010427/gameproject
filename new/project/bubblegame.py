@@ -520,11 +520,11 @@ while running:
     screen.fill((202, 228, 241))
     screen.blit(title, (0, 0))
 
-    startButton = Button(startImg, 90, 600, 60, 20,
-                         clickStartImg, 93, 603, None)
+    startButton = Button(startImg, 80, 600, 60, 20,
+                         clickStartImg, 83, 603, None)
 
-    quitButton = Button(quitImg, 290, 600, 60, 20,
-                        clickQuitImg, 293, 603, quitgame)
+    quitButton = Button(quitImg, 280, 600, 60, 20,
+                        clickQuitImg, 283, 603, quitgame)
 
     for event in pygame.event.get():  # 발생하는 모든 이벤트를 받음
         if event.type == pygame.QUIT:  # 종료버튼구현
@@ -548,7 +548,7 @@ while running:
 
     mouse = pygame.mouse.get_pos()
     click = pygame.mouse.get_pressed()
-    x = 90
+    x = 80
     width = 60
     y = 600
     height = 20
